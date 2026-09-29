@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /spasibo.html
+Disallow: /privacy.html
+
+Sitemap: https://beslancars.ru/sitemap.xml
