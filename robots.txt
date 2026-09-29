@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://your-github-username.github.io/beslan-cars/sitemap.xml
+Sitemap: https://beslancars.ru/sitemap.xml
+Host: beslancars.ru

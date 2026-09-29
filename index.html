@@ -3,865 +3,433 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beslan Cars — Автозапчасти в Беслане и Северной Осетии | Доставка на дом</title>
+    <meta name="description" content="Продажа автозапчастей для легковых и грузовых авто в Беслане. Доставка по Северной Осетии от 2 часов. Бесплатная доставка от 5000₽. Работаем с юрлицами.">
+    <meta name="keywords" content="автозапчасти беслан, купить запчасти осетия, доставка запчастей владикавказ, всемирные автомобили, beslan cars">
     
-    <!-- SEO Meta Tags -->
-    <title>Beslan Cars - Автозапчасти в Беслане и Северной Осетии | Доставка на дом</title>
-    <meta name="description" content="Автозапчасти в Беслане и Северной Осетии. Любые запчасти на заказ с доставкой на дом от 2 часов. Бесплатная доставка от 5000₽. Работаем с легковыми и грузовыми авто.">
-    <meta name="keywords" content="автозапчасти беслан, автозапчасти северная осетия, купить запчасти владикавказ, запчасти с доставкой, autoparts beslan">
-    <meta name="author" content="Beslan Cars">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph -->
+    <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Beslan Cars - Автозапчасти в Беслане и Северной Осетии">
-    <meta property="og:description" content="Любые автозапчасти на заказ с доставкой на дом. Бесплатная доставка от 5000₽.">
-    <meta property="og:url" content="https://your-github-username.github.io/beslan-cars/">
-    <meta property="og:site_name" content="Beslan Cars">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://your-github-username.github.io/beslan-cars/">
-    
-    <!-- Favicon placeholder -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#1a56db',
-                        secondary: '#1e40af',
-                        accent: '#f59e0b',
-                        dark: '#1f2937',
-                    }
-                }
+    <meta property="og:title" content="Beslan Cars — Автозапчасти с доставкой по Северной Осетии">
+    <meta property="og:description" content="Любые запчасти для легковых и грузовых авто. Доставка от 2 часов. Звоните!">
+    <meta property="og:image" content="https://beslancars.ru/assets/images/og-image.jpg">
+    <meta property="og:url" content="https://beslancars.ru/">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="canonical" href="https://beslancars.ru/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Schema.org: LocalBusiness + FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["LocalBusiness", "AutoPartsStore"],
+          "@id": "https://beslancars.ru/#business",
+          "name": "Beslan Cars — Автозапчасти",
+          "alternateName": "Беслан Карс",
+          "url": "https://beslancars.ru/",
+          "logo": "https://beslancars.ru/assets/logo.svg",
+          "image": "https://beslancars.ru/assets/images/pvz-photo.jpg",
+          "description": "Продажа автозапчастей для легковых и грузовых автомобилей в Беслане с доставкой по Северной Осетии от 2 часов. Бесплатная доставка от 5000₽. Работаем с юрлицами.",
+          "telephone": "+79187082023",
+          "email": "All-World-Cars-Beslan@yandex.ru",
+          "priceRange": "₽₽",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "улица Нартовская, 23А",
+            "addressLocality": "Беслан",
+            "addressRegion": "Республика Северная Осетия — Алания",
+            "postalCode": "363000",
+            "addressCountry": "RU"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 43.2044,
+            "longitude": 44.5522
+          },
+          "areaServed": [
+            {"@type": "City", "name": "Беслан"},
+            {"@type": "City", "name": "Владикавказ"},
+            {"@type": "AdministrativeArea", "name": "Республика Северная Осетия — Алания"}
+          ],
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          },
+          "sameAs": [
+            "https://t.me/zapchasti_beslan",
+            "https://wa.me/79187082023",
+            "https://all-world-cars.com/?FranchiseeId=157358060"
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://beslancars.ru/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Сколько занимает доставка запчастей по Северной Осетии?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Если деталь есть в наличии, доставка по Северной Осетии занимает от 2 часов. Запчасти под заказ доставляются за 2–5 дней в зависимости от наличия у поставщиков."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Бесплатна ли доставка автозапчастей в Беслане?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Да, при заказе на сумму от 5000 рублей доставка по Северной Осетии бесплатная. При меньшей сумме стоимость доставки рассчитывается индивидуально."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Можно ли заказать запчасти на грузовой автомобиль?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Да, мы продаём любые автозапчасти на заказ как для легковых, так и для грузовых автомобилей — отечественных и импортных. Для подбора используйте каталог грузовых запчастей или пришлите VIN-код нам в Telegram или WhatsApp."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Как купить автозапчасти оптом для юридического лица?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Мы работаем с юридическими лицами с полным пакетом документов и работой с НДС. Свяжитесь с нами по телефону +7 918 708-20-23 или по почте All-World-Cars-Beslan@yandex.ru для заключения договора."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Отправляете ли вы запчасти в другие регионы России?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Да, в другие регионы мы отправляем заказы через СДЭК и Почту России. Сроки и стоимость доставки рассчитываются индивидуально после оформления заказа."
+              }
             }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://beslancars.ru/#website",
+          "url": "https://beslancars.ru/",
+          "name": "Beslan Cars",
+          "publisher": {"@id": "https://beslancars.ru/#business"},
+          "inLanguage": "ru-RU"
         }
+      ]
+    }
     </script>
-    
-    <!-- Vue 3 -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Yandex.Metrika counter -->
+
+    <!-- Яндекс.Метрика -->
     <script type="text/javascript" >
        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       m[i].l=1*new Date();
+       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-       ym(92916804, "init", {
+       ym(XXXXXXX, "init", {
             clickmap:true,
             trackLinks:true,
             accurateTrackBounce:true,
             webvisor:true
        });
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/92916804" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/XXXXXXX" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+    <!-- Google Analytics (ЗАМЕНИТЕ G-YOURGAID НА ВАШ ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOURGAID"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
+      gtag('config', 'G-YOURGAID');
     </script>
-    
-    <!-- Schema.org LocalBusiness -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AutoPartsStore",
-      "name": "Beslan Cars",
-      "image": "https://your-github-username.github.io/beslan-cars/logo.svg",
-      "telephone": "+7 (999) 000-00-00",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "ул. Примерная, д. 1",
-        "addressLocality": "Беслан",
-        "addressRegion": "Северная Осетия - Алания",
-        "postalCode": "363100",
-        "addressCountry": "RU"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 43.2000,
-        "longitude": 44.5167
-      },
-      "url": "https://your-github-username.github.io/beslan-cars/",
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "09:00",
-        "closes": "18:00"
-      },
-      "priceRange": "₽₽",
-      "servesCuisine": "Автозапчасти для легковых и грузовых автомобилей"
-    }
-    </script>
-    
-    <style>
-        .hero-gradient {
-            background: linear-gradient(135deg, #1a56db 0%, #1e40af 100%);
-        }
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        }
-        .smooth-scroll {
-            scroll-behavior: smooth;
-        }
-        .fade-in {
-            animation: fadeIn 0.6s ease-in;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased smooth-scroll">
-    <div id="app">
-        <!-- Header -->
-        <header class="bg-white shadow-lg sticky top-0 z-50">
-            <div class="container mx-auto px-4 py-3">
-                <div class="flex justify-between items-center">
-                    <!-- Logo -->
-                    <div class="flex items-center space-x-3">
-                        <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                            <i class="fas fa-car-side text-white text-2xl"></i>
-                        </div>
-                        <div>
-                            <h1 class="text-xl font-bold text-dark">Beslan Cars</h1>
-                            <p class="text-xs text-gray-500">Автозапчасти в Беслане</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Desktop Navigation -->
-                    <nav class="hidden md:flex space-x-6">
-                        <a href="#about" class="text-gray-600 hover:text-primary transition">О нас</a>
-                        <a href="#services" class="text-gray-600 hover:text-primary transition">Услуги</a>
-                        <a href="#delivery" class="text-gray-600 hover:text-primary transition">Доставка</a>
-                        <a href="#blog" class="text-gray-600 hover:text-primary transition">Блог</a>
-                        <a href="#reviews" class="text-gray-600 hover:text-primary transition">Отзывы</a>
-                        <a href="#contact" class="text-gray-600 hover:text-primary transition">Контакты</a>
-                    </nav>
-                    
-                    <!-- Contact Buttons -->
-                    <div class="hidden md:flex items-center space-x-3">
-                        <a :href="whatsappLink" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition flex items-center space-x-2">
-                            <i class="fab fa-whatsapp"></i>
-                            <span>WhatsApp</span>
-                        </a>
-                        <a :href="telegramLink" target="_blank" class="bg-blue-400 hover:bg-blue-500 text-white px-4 py-2 rounded-lg transition flex items-center space-x-2">
-                            <i class="fab fa-telegram"></i>
-                            <span>Telegram</span>
-                        </a>
-                    </div>
-                    
-                    <!-- Mobile Menu Button -->
-                    <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden text-gray-600">
-                        <i class="fas fa-bars text-2xl"></i>
-                    </button>
-                </div>
-                
-                <!-- Mobile Menu -->
-                <div v-if="mobileMenuOpen" class="md:hidden mt-4 pb-4 border-t pt-4">
-                    <nav class="flex flex-col space-y-3">
-                        <a href="#about" @click="mobileMenuOpen = false" class="text-gray-600 hover:text-primary">О нас</a>
-                        <a href="#services" @click="mobileMenuOpen = false" class="text-gray-600 hover:text-primary">Услуги</a>
-                        <a href="#delivery" @click="mobileMenuOpen = false" class="text-gray-600 hover:text-primary">Доставка</a>
-                        <a href="#blog" @click="mobileMenuOpen = false" class="text-gray-600 hover:text-primary">Блог</a>
-                        <a href="#reviews" @click="mobileMenuOpen = false" class="text-gray-600 hover:text-primary">Отзывы</a>
-                        <a href="#contact" @click="mobileMenuOpen = false" class="text-gray-600 hover:text-primary">Контакты</a>
-                        <div class="flex space-x-3 pt-3">
-                            <a :href="whatsappLink" target="_blank" class="bg-green-500 text-white px-4 py-2 rounded-lg flex items-center space-x-2">
-                                <i class="fab fa-whatsapp"></i>
-                                <span>WhatsApp</span>
-                            </a>
-                            <a :href="telegramLink" target="_blank" class="bg-blue-400 text-white px-4 py-2 rounded-lg flex items-center space-x-2">
-                                <i class="fab fa-telegram"></i>
-                                <span>Telegram</span>
-                            </a>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </header>
+<body>
 
-        <!-- Hero Section -->
-        <section class="hero-gradient text-white py-20">
-            <div class="container mx-auto px-4">
-                <div class="max-w-4xl mx-auto text-center">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-6 fade-in">
-                        Автозапчасти в Беслане и Северной Осетии
-                    </h2>
-                    <p class="text-xl md:text-2xl mb-8 opacity-90 fade-in">
-                        Любые запчасти на заказ с доставкой на дом от 2 часов до 5 дней
-                    </p>
-                    <div class="flex flex-col sm:flex-row justify-center gap-4 fade-in">
-                        <a href="https://all-world-cars.com/?FranchiseeId=157358060" target="_blank" class="bg-accent hover:bg-yellow-500 text-dark font-bold px-8 py-4 rounded-lg transition text-lg">
-                            <i class="fas fa-search mr-2"></i>
-                            Подобрать запчасти
-                        </a>
-                        <a href="#contact" class="border-2 border-white hover:bg-white hover:text-primary font-bold px-8 py-4 rounded-lg transition text-lg">
-                            <i class="fas fa-phone mr-2"></i>
-                            Заказать звонок
-                        </a>
-                    </div>
-                    <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                        <div class="bg-white/10 backdrop-blur rounded-lg p-4">
-                            <div class="text-3xl font-bold">2 часа</div>
-                            <div class="text-sm opacity-80">Мин. срок доставки</div>
-                        </div>
-                        <div class="bg-white/10 backdrop-blur rounded-lg p-4">
-                            <div class="text-3xl font-bold">5000₽</div>
-                            <div class="text-sm opacity-80">Бесплатная доставка</div>
-                        </div>
-                        <div class="bg-white/10 backdrop-blur rounded-lg p-4">
-                            <div class="text-3xl font-bold">100%</div>
-                            <div class="text-sm opacity-80">Гарантия качества</div>
-                        </div>
-                        <div class="bg-white/10 backdrop-blur rounded-lg p-4">
-                            <div class="text-3xl font-bold">24/7</div>
-                            <div class="text-sm opacity-80">Прием заявок</div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="assets/logo.svg" alt="Beslan Cars — автозапчасти в Беслане">
+                <span class="logo-text">Beslan Cars</span>
             </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="py-16 bg-white">
-            <div class="container mx-auto px-4">
-                <div class="max-w-6xl mx-auto">
-                    <div class="text-center mb-12">
-                        <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">О компании Beslan Cars</h2>
-                        <p class="text-gray-600 max-w-3xl mx-auto">
-                            Ваш надежный партнер в мире автозапчастей в Северной Осетии
-                        </p>
-                    </div>
-                    
-                    <div class="grid md:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <h3 class="text-2xl font-bold text-dark mb-4">Почему выбирают нас?</h3>
-                            <ul class="space-y-4">
-                                <li class="flex items-start space-x-3">
-                                    <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
-                                    <span>Работаем с легковыми и грузовыми автомобилями любых марок</span>
-                                </li>
-                                <li class="flex items-start space-x-3">
-                                    <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
-                                    <span>Доставка на дом по всей Северной Осетии</span>
-                                </li>
-                                <li class="flex items-start space-x-3">
-                                    <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
-                                    <span>Бесплатная доставка при заказе от 5000₽</span>
-                                </li>
-                                <li class="flex items-start space-x-3">
-                                    <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
-                                    <span>Сроки доставки от 2 часов до 5 дней</span>
-                                </li>
-                                <li class="flex items-start space-x-3">
-                                    <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
-                                    <span>Работаем с юридическими лицами</span>
-                                </li>
-                                <li class="flex items-start space-x-3">
-                                    <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
-                                    <span>Отправка СДЭК и Почтой России в другие регионы</span>
-                                </li>
-                            </ul>
-                            
-                            <div class="mt-8 p-6 bg-blue-50 rounded-lg border-l-4 border-primary">
-                                <p class="text-gray-700">
-                                    <strong>Важно:</strong> Наш сайт-партнер 
-                                    <a href="https://all-world-cars.com/?FranchiseeId=157358060" target="_blank" class="text-primary hover:underline">all-world-cars.com</a> 
-                                    предоставляет полный каталог запчастей и актуальные цены. Здесь вы можете оставить заявку, а подбор и расчет стоимости осуществляется на сайте партнера.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="relative">
-                            <div class="bg-gray-200 rounded-lg overflow-hidden shadow-xl">
-                                <div class="aspect-video bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                                    <div class="text-center text-white p-8">
-                                        <i class="fas fa-store text-6xl mb-4"></i>
-                                        <p class="text-xl font-semibold">Фото ПВЗ в Беслане</p>
-                                        <p class="text-sm opacity-80 mt-2">Загрузите ваши реальные фото</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-accent rounded-lg flex items-center justify-center shadow-lg">
-                                <div class="text-center text-dark">
-                                    <div class="text-2xl font-bold">100%</div>
-                                    <div class="text-xs">Оригинальные<br>запчасти</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <nav class="nav">
+                <a href="#about">О нас</a>
+                <a href="#delivery">Доставка</a>
+                <a href="#blog">Блог</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <div class="header-contacts">
+                <a href="tel:+79187082023" class="phone">+7 (918) 708-20-23</a>
+                <button class="btn btn-outline open-modal">Заказать звонок</button>
             </div>
-        </section>
+            <div class="mobile-menu-btn">☰</div>
+        </div>
+    </header>
 
-        <!-- Services Section -->
-        <section id="services" class="py-16 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Наши услуги</h2>
-                    <p class="text-gray-600 max-w-3xl mx-auto">
-                        Полный спектр услуг по подбору и доставке автозапчастей
-                    </p>
-                </div>
-                
-                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    <div class="bg-white rounded-xl shadow-lg p-8 card-hover transition-all duration-300">
-                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-                            <i class="fas fa-search text-white text-2xl"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-dark mb-3">Подбор запчастей</h3>
-                        <p class="text-gray-600 mb-4">
-                            Профессиональный подбор запчастей по VIN-коду или параметрам автомобиля на сайте партнера.
-                        </p>
-                        <a href="https://all-world-cars.com/?FranchiseeId=157358060" target="_blank" class="text-primary font-semibold hover:underline">
-                            Перейти в каталог →
-                        </a>
-                    </div>
-                    
-                    <div class="bg-white rounded-xl shadow-lg p-8 card-hover transition-all duration-300">
-                        <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mb-6">
-                            <i class="fas fa-truck text-white text-2xl"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-dark mb-3">Доставка на дом</h3>
-                        <p class="text-gray-600 mb-4">
-                            Быстрая доставка по Северной Осетии. Бесплатно при заказе от 5000₽. Срок от 2 часов до 5 дней.
-                        </p>
-                        <a href="#delivery" class="text-primary font-semibold hover:underline">
-                            Подробнее о доставке →
-                        </a>
-                    </div>
-                    
-                    <div class="bg-white rounded-xl shadow-lg p-8 card-hover transition-all duration-300">
-                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mb-6">
-                            <i class="fas fa-file-contract text-white text-2xl"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-dark mb-3">Работа с юрлицами</h3>
-                        <p class="text-gray-600 mb-4">
-                            Специальные условия для юридических лиц. Полный пакет документов, безналичный расчет.
-                        </p>
-                        <a href="#contact" class="text-primary font-semibold hover:underline">
-                            Связаться с нами →
-                        </a>
-                    </div>
-                </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Автозапчасти в Беслане с доставкой на дом</h1>
+            <p class="hero-subtitle">Любые детали для легковых и грузовых авто. От 2 часов до 5 дней. Работаем с юрлицами.</p>
+            <div class="hero-buttons">
+                <a href="https://all-world-cars.com/?FranchiseeId=157358060" target="_blank" class="btn btn-primary">Перейти в каталог</a>
+                <a href="#order-form" class="btn btn-secondary">Быстрый заказ</a>
             </div>
-        </section>
-
-        <!-- Delivery Section -->
-        <section id="delivery" class="py-16 bg-white">
-            <div class="container mx-auto px-4">
-                <div class="max-w-6xl mx-auto">
-                    <div class="text-center mb-12">
-                        <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Доставка и оплата</h2>
-                        <p class="text-gray-600 max-w-3xl mx-auto">
-                            Удобные способы доставки по Северной Осетии и России
-                        </p>
-                    </div>
-                    
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 border border-blue-100">
-                            <h3 class="text-2xl font-bold text-dark mb-6 flex items-center">
-                                <i class="fas fa-map-marker-alt text-primary mr-3"></i>
-                                По Северной Осетии
-                            </h3>
-                            <ul class="space-y-4">
-                                <li class="flex items-start space-x-3">
-                                    <i class="fas fa-check text-green-500 mt-1"></i>
-                                    <span><strong>Бесплатная доставка</strong> при заказе от 5000₽</span>
-                                </li>
-                                <li class="flex items-start space-x-3">
-                                    <i class="fas fa-check text-green-500 mt-1"></i>
-                                    <span>Срок доставки: от 2 часов до 5 дней</span>
-                                </li>
-                                <li class="flex items-start space-x-3">
-                                    <i class="fas fa-check text-green-500 mt-1"></i>
-                                    <span>Доставка на дом в удобное время</span>
-                                </li>
-                                <li class="flex items-start space-x-3">
-                                    <i class="fas fa-check text-green-500 mt-1"></i>
-                                    <span>Возможность оплаты при получении</span>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <div class="bg-gradient-to-br from-orange-50 to-yellow-50 rounded-xl p-8 border border-orange-100">
-                            <h3 class="text-2xl font-bold text-dark mb-6 flex items-center">
-                                <i class="fas fa-shipping-fast text-accent mr-3"></i>
-                                В другие регионы
-                            </h3>
-                            <ul class="space-y-4">
-                                <li class="flex items-start space-x-3">
-                                    <i class="fas fa-check text-green-500 mt-1"></i>
-                                    <span><strong>СДЭК</strong> - быстрая курьерская доставка</span>
-                                </li>
-                                <li class="flex items-start space-x-3">
-                                    <i class="fas fa-check text-green-500 mt-1"></i>
-                                    <span><strong>Почта России</strong> - доступная доставка</span>
-                                </li>
-                                <li class="flex items-start space-x-3">
-                                    <i class="fas fa-check text-green-500 mt-1"></i>
-                                    <span>Отправка в день заказа</span>
-                                </li>
-                                <li class="flex items-start space-x-3">
-                                    <i class="fas fa-check text-green-500 mt-1"></i>
-                                    <span>Трекинг-номер для отслеживания</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-12 bg-dark text-white rounded-xl p-8 text-center">
-                        <h3 class="text-2xl font-bold mb-4">Как сделать заказ?</h3>
-                        <div class="grid md:grid-cols-4 gap-6">
-                            <div>
-                                <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-3 text-dark font-bold text-xl">1</div>
-                                <p class="font-semibold">Подберите запчасти</p>
-                                <p class="text-sm opacity-80">на сайте партнера</p>
-                            </div>
-                            <div>
-                                <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-3 text-dark font-bold text-xl">2</div>
-                                <p class="font-semibold">Оставьте заявку</p>
-                                <p class="text-sm opacity-80">через форму ниже</p>
-                            </div>
-                            <div>
-                                <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-3 text-dark font-bold text-xl">3</div>
-                                <p class="font-semibold">Подтвердите заказ</p>
-                                <p class="text-sm opacity-80">менеджер свяжется с вами</p>
-                            </div>
-                            <div>
-                                <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-3 text-dark font-bold text-xl">4</div>
-                                <p class="font-semibold">Получите доставку</p>
-                                <p class="text-sm opacity-80">в удобное время</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="hero-features">
+                <span>🚚 Бесплатная доставка от 5000₽</span>
+                <span>⏱ Срок: от 2 часов</span>
+                <span>📄 Работа с НДС</span>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Blog Section -->
-        <section id="blog" class="py-16 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Блог об автозапчастях</h2>
-                    <p class="text-gray-600 max-w-3xl mx-auto">
-                        Полезные статьи о выборе, обслуживании и ремонте автомобилей
-                    </p>
+    <!-- About / Advantages -->
+    <section id="about" class="section advantages">
+        <div class="container">
+            <h2>Почему выбирают Beslan Cars?</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="icon">🌍</div>
+                    <h3>Огромный выбор</h3>
+                    <p>Доступ к каталогу all-world-cars.com. Запчасти на любые марки: европейские, азиатские, отечественные.</p>
                 </div>
-                
-                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    <article v-for="article in blogPosts" :key="article.id" class="bg-white rounded-xl shadow-lg overflow-hidden card-hover transition-all duration-300">
-                        <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                            <i class="fas fa-newspaper text-4xl text-gray-400"></i>
-                        </div>
-                        <div class="p-6">
-                            <div class="text-sm text-primary font-semibold mb-2">{{ article.category }}</div>
-                            <h3 class="text-xl font-bold text-dark mb-3">{{ article.title }}</h3>
-                            <p class="text-gray-600 mb-4 line-clamp-3">{{ article.excerpt }}</p>
-                            <div class="flex items-center justify-between">
-                                <span class="text-sm text-gray-500">{{ article.date }}</span>
-                                <button @click="openArticle(article)" class="text-primary font-semibold hover:underline">
-                                    Читать →
-                                </button>
-                            </div>
-                        </div>
-                    </article>
+                <div class="card">
+                    <div class="icon">🚀</div>
+                    <h3>Быстрая доставка</h3>
+                    <p>По Северной Осетии от 2 часов. Если нет в наличии — привезем под заказ за 2-5 дней.</p>
                 </div>
-                
-                <div class="text-center mt-12">
-                    <button @click="showAllArticles = !showAllArticles" class="bg-primary hover:bg-secondary text-white font-bold px-8 py-3 rounded-lg transition">
-                        {{ showAllArticles ? 'Скрыть статьи' : 'Показать все статьи' }}
-                    </button>
+                <div class="card">
+                    <div class="icon">💼</div>
+                    <h3>Для всех клиентов</h3>
+                    <p>Работаем с физическими и юридическими лицами. Предоставляем все документы.</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Article Modal -->
-        <div v-if="selectedArticle" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" @click="selectedArticle = null">
-            <div class="bg-white rounded-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto" @click.stop>
-                <div class="p-8">
-                    <div class="flex justify-between items-start mb-6">
-                        <div>
-                            <div class="text-sm text-primary font-semibold mb-2">{{ selectedArticle.category }}</div>
-                            <h2 class="text-3xl font-bold text-dark">{{ selectedArticle.title }}</h2>
-                        </div>
-                        <button @click="selectedArticle = null" class="text-gray-400 hover:text-gray-600">
-                            <i class="fas fa-times text-2xl"></i>
-                        </button>
-                    </div>
-                    <div class="text-sm text-gray-500 mb-6">{{ selectedArticle.date }}</div>
-                    <div class="prose max-w-none" v-html="selectedArticle.content"></div>
+                <div class="card">
+                    <div class="icon">📦</div>
+                    <h3>Доставка по РФ</h3>
+                    <p>Отправляем заказы в другие регионы через СДЭК и Почту России.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">💰</div>
+                    <h3>Честные цены</h3>
+                    <p>Прямые поставки без лишних наценок. Бесплатная доставка по Беслану от 5000₽.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🛡️</div>
+                    <h3>Надежность</h3>
+                    <p>Только проверенные поставщики. Гарантия соответствия артикулам.</p>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Reviews Section -->
-        <section id="reviews" class="py-16 bg-white">
-            <div class="container mx-auto px-4">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Отзывы клиентов</h2>
-                    <p class="text-gray-600 max-w-3xl mx-auto">
-                        Что говорят наши клиенты о работе с Beslan Cars
-                    </p>
-                </div>
-                
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    <div v-for="review in reviews" :key="review.id" class="bg-gray-50 rounded-xl p-6 card-hover transition-all duration-300">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
-                                {{ review.name.charAt(0) }}
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-dark">{{ review.name }}</h4>
-                                <p class="text-sm text-gray-500">{{ review.city }}</p>
-                            </div>
-                        </div>
-                        <div class="flex mb-3">
-                            <i v-for="star in 5" :key="star" 
-                               :class="star <= review.rating ? 'fas fa-star text-accent' : 'far fa-star text-gray-300'"></i>
-                        </div>
-                        <p class="text-gray-600">{{ review.text }}</p>
+    <!-- Order Form -->
+    <section id="order-form" class="section order-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <h2>Оформить быстрый заказ</h2>
+                <p>Укажите детали, которые нужны, и мы перезвоним с расчетом стоимости и сроков.</p>
+                <form id="leadForm" class="main-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" required placeholder="Иван">
                     </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+7 (999) 000-00-00">
+                    </div>
+                    <div class="form-group">
+                        <label for="car">Марка и модель авто</label>
+                        <input type="text" id="car" name="car" placeholder="Например: Toyota Camry 2015">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Список запчастей или VIN-код</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Перечислите детали или приложите фото списка..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
+                    <p class="form-note">Нажимаю кнопку, вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a>.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Info -->
+    <section id="delivery" class="section delivery-section bg-light">
+        <div class="container">
+            <h2>Условия доставки</h2>
+            <div class="delivery-grid">
+                <div class="delivery-item">
+                    <h3>📍 По Северной Осетии</h3>
+                    <ul>
+                        <li>Срок: от 2 часов (если есть в наличии)</li>
+                        <li>Под заказ: 2–5 дней</li>
+                        <li>Бесплатно при заказе от <strong>5 000 ₽</strong></li>
+                        <li>Стоимость доставки при меньшей сумме: договорная</li>
+                    </ul>
                 </div>
-                
-                <div class="text-center mt-12">
-                    <a href="#contact" class="bg-primary hover:bg-secondary text-white font-bold px-8 py-3 rounded-lg transition inline-flex items-center">
-                        <i class="fas fa-pen mr-2"></i>
-                        Оставить отзыв
-                    </a>
+                <div class="delivery-item">
+                    <h3>✈️ По России</h3>
+                    <ul>
+                        <li>СДЭК (до пункта выдачи или курьером)</li>
+                        <li>Почта России</li>
+                        <li>Сроки и стоимость рассчитываются индивидуально</li>
+                    </ul>
+                </div>
+                <div class="delivery-item photo-block">
+                    <h3>Наш пункт выдачи в Беслане</h3>
+                    <img src="assets/images/pvz-photo.jpg" alt="Пункт выдачи Beslan Cars" onerror="this.src='https://via.placeholder.com/400x300?text=Фото+ПВЗ'">
+                    <p class="caption">Ждем вас за заказами!</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="py-16 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <div class="max-w-6xl mx-auto">
-                    <div class="text-center mb-12">
-                        <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Контакты</h2>
-                        <p class="text-gray-600 max-w-3xl mx-auto">
-                            Свяжитесь с нами любым удобным способом
-                        </p>
+    <!-- Blog Preview -->
+    <section id="blog" class="section blog-section">
+        <div class="container">
+            <h2>Полезные статьи</h2>
+            <p class="section-desc">Советы по выбору запчастей, обслуживанию авто и новости рынка.</p>
+            <div class="grid-3" id="blog-posts">
+                <article class="card post-card">
+                    <div class="post-img blog-thumb thumb-1">🔧</div>
+                    <div class="post-content">
+                        <h3>Где купить автозапчасти в Беслане: полный гид 2026</h3>
+                        <p>Разбираем варианты: местные магазины, заказ по VIN и доставка на дом. Как не переплатить за подделку.</p>
+                        <a href="blog/gde-kupit-avtozapchasti-v-beslane.html" class="read-more">Читать далее →</a>
                     </div>
-                    
-                    <div class="grid md:grid-cols-2 gap-12">
-                        <!-- Contact Info -->
-                        <div>
-                            <h3 class="text-2xl font-bold text-dark mb-6">Наши контакты</h3>
-                            
-                            <div class="space-y-6">
-                                <div class="flex items-start space-x-4">
-                                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <i class="fas fa-map-marker-alt text-white text-xl"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-bold text-dark mb-1">Адрес</h4>
-                                        <p class="text-gray-600">г. Беслан, ул. Примерная, д. 1<br>Северная Осетия - Алания, 363100</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="flex items-start space-x-4">
-                                    <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <i class="fas fa-phone text-white text-xl"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-bold text-dark mb-1">Телефон</h4>
-                                        <a :href="'tel:' + phone" class="text-primary hover:underline text-lg font-semibold">{{ formattedPhone }}</a>
-                                        <p class="text-gray-500 text-sm">Пн-Сб: 9:00 - 18:00</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="flex items-start space-x-4">
-                                    <div class="w-12 h-12 bg-blue-400 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <i class="fab fa-telegram text-white text-xl"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-bold text-dark mb-1">Telegram</h4>
-                                        <a :href="telegramLink" target="_blank" class="text-primary hover:underline">@beslancars</a>
-                                    </div>
-                                </div>
-                                
-                                <div class="flex items-start space-x-4">
-                                    <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <i class="fab fa-whatsapp text-white text-xl"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-bold text-dark mb-1">WhatsApp</h4>
-                                        <a :href="whatsappLink" target="_blank" class="text-primary hover:underline">Написать в WhatsApp</a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="mt-8 p-6 bg-white rounded-lg shadow">
-                                <h4 class="font-bold text-dark mb-3">Режим работы</h4>
-                                <ul class="space-y-2 text-gray-600">
-                                    <li class="flex justify-between"><span>Понедельник - Пятница:</span> <span>9:00 - 18:00</span></li>
-                                    <li class="flex justify-between"><span>Суббота:</span> <span>10:00 - 15:00</span></li>
-                                    <li class="flex justify-between"><span>Воскресенье:</span> <span>Выходной</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <!-- Contact Form -->
-                        <div class="bg-white rounded-xl shadow-lg p-8">
-                            <h3 class="text-2xl font-bold text-dark mb-6">Оставить заявку</h3>
-                            
-                            <form @submit.prevent="submitForm" class="space-y-6">
-                                <div>
-                                    <label class="block text-gray-700 font-semibold mb-2">Ваше имя *</label>
-                                    <input v-model="form.name" type="text" required 
-                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-                                           placeholder="Иван Иванов">
-                                </div>
-                                
-                                <div>
-                                    <label class="block text-gray-700 font-semibold mb-2">Телефон *</label>
-                                    <input v-model="form.phone" type="tel" required 
-                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-                                           placeholder="+7 (999) 000-00-00">
-                                </div>
-                                
-                                <div>
-                                    <label class="block text-gray-700 font-semibold mb-2">Автомобиль</label>
-                                    <input v-model="form.car" type="text" 
-                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-                                           placeholder="Марка, модель, год выпуска">
-                                </div>
-                                
-                                <div>
-                                    <label class="block text-gray-700 font-semibold mb-2">Какие запчасти нужны?</label>
-                                    <textarea v-model="form.message" rows="4" 
-                                              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-                                              placeholder="Опишите, какие запчасти вам нужны"></textarea>
-                                </div>
-                                
-                                <button type="submit" 
-                                        class="w-full bg-primary hover:bg-secondary text-white font-bold py-4 rounded-lg transition text-lg">
-                                    <i class="fas fa-paper-plane mr-2"></i>
-                                    Отправить заявку
-                                </button>
-                                
-                                <p class="text-xs text-gray-500 text-center">
-                                    Нажимая кнопку, вы соглашаетесь с 
-                                    <a href="/politika-konfidentsialnosti/" class="text-primary hover:underline">политикой конфиденциальности</a>
-                                </p>
-                            </form>
-                        </div>
+                </article>
+                <article class="card post-card">
+                    <div class="post-img blog-thumb thumb-2">🚚</div>
+                    <div class="post-content">
+                        <h3>Доставка автозапчастей по Северной Осетии: от 2 часов</h3>
+                        <p>Как устроена доставка во Владикавказ, Алагир, Моздок и районы республики. Когда доставка бесплатна.</p>
+                        <a href="blog/dostavka-zapchastey-po-severnoy-osetii.html" class="read-more">Читать далее →</a>
                     </div>
+                </article>
+                <article class="card post-card">
+                    <div class="post-img blog-thumb thumb-3">🛻</div>
+                    <div class="post-content">
+                        <h3>Запчасти на грузовики в Осетии: КАМАЗ, ГАЗ, MAN, Mercedes</h3>
+                        <p>Чем отличается подбор запчастей для грузового парка и как сократить простой техники до минимума.</p>
+                        <a href="blog/zapchasti-na-gruzoviki-v-osetii.html" class="read-more">Читать далее →</a>
+                    </div>
+                </article>
+                <article class="card post-card">
+                    <div class="post-img blog-thumb thumb-4">🔍</div>
+                    <div class="post-content">
+                        <h3>Как подобрать запчасть по VIN-коду и не ошибиться</h3>
+                        <p>Пошаговая инструкция: расшифровка VIN, каталоги TecDoc и Laximo, частые ошибки при заказе.</p>
+                        <a href="blog/kak-podobrat-zapchast-po-vin.html" class="read-more">Читать далее →</a>
+                    </div>
+                </article>
+            </div>
+            <div class="text-center mt-4">
+                <a href="blog.html" class="btn btn-outline">Все статьи</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="section reviews-section bg-light">
+        <div class="container">
+            <h2>Отзывы клиентов</h2>
+            <div class="reviews-grid" id="reviews-container">
+                <!-- Отзывы загружаются через JS из localStorage -->
+            </div>
+            <div class="text-center mt-4">
+                <button class="btn btn-secondary open-review-modal">Оставить отзыв</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacts" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Beslan Cars</h3>
+                <p>Ваш надежный партнер в мире автозапчастей.</p>
+                <div class="social-links">
+                    <a href="https://wa.me/79187082023" target="_blank">WhatsApp</a>
+                    <a href="https://t.me/zapchasti_beslan" target="_blank">Telegram</a>
                 </div>
             </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="bg-dark text-white py-12">
-            <div class="container mx-auto px-4">
-                <div class="max-w-6xl mx-auto">
-                    <div class="grid md:grid-cols-4 gap-8 mb-8">
-                        <div>
-                            <div class="flex items-center space-x-3 mb-4">
-                                <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                                    <i class="fas fa-car-side text-white text-xl"></i>
-                                </div>
-                                <h3 class="text-xl font-bold">Beslan Cars</h3>
-                            </div>
-                            <p class="text-gray-400 text-sm">
-                                Автозапчасти в Беслане и Северной Осетии с доставкой на дом.
-                            </p>
-                        </div>
-                        
-                        <div>
-                            <h4 class="font-bold mb-4">Навигация</h4>
-                            <ul class="space-y-2 text-gray-400">
-                                <li><a href="#about" class="hover:text-white transition">О нас</a></li>
-                                <li><a href="#services" class="hover:text-white transition">Услуги</a></li>
-                                <li><a href="#delivery" class="hover:text-white transition">Доставка</a></li>
-                                <li><a href="#blog" class="hover:text-white transition">Блог</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div>
-                            <h4 class="font-bold mb-4">Клиентам</h4>
-                            <ul class="space-y-2 text-gray-400">
-                                <li><a href="#reviews" class="hover:text-white transition">Отзывы</a></li>
-                                <li><a href="/politika-konfidentsialnosti/" class="hover:text-white transition">Политика конфиденциальности</a></li>
-                                <li><a href="https://all-world-cars.com/?FranchiseeId=157358060" target="_blank" class="hover:text-white transition">Каталог запчастей</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div>
-                            <h4 class="font-bold mb-4">Контакты</h4>
-                            <ul class="space-y-2 text-gray-400">
-                                <li class="flex items-center space-x-2">
-                                    <i class="fas fa-phone"></i>
-                                    <span>{{ formattedPhone }}</span>
-                                </li>
-                                <li class="flex items-center space-x-2">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>г. Беслан</span>
-                                </li>
-                            </ul>
-                            <div class="flex space-x-3 mt-4">
-                                <a :href="telegramLink" target="_blank" class="w-10 h-10 bg-blue-400 rounded-lg flex items-center justify-center hover:bg-blue-500 transition">
-                                    <i class="fab fa-telegram text-white text-xl"></i>
-                                </a>
-                                <a :href="whatsappLink" target="_blank" class="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center hover:bg-green-600 transition">
-                                    <i class="fab fa-whatsapp text-white text-xl"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
-                        <p>&copy; 2024 Beslan Cars. Все права защищены.</p>
-                        <p class="mt-2">
-                            Сайт-партнер: 
-                            <a href="https://all-world-cars.com/?FranchiseeId=157358060" target="_blank" class="text-primary hover:underline">all-world-cars.com</a>
-                        </p>
-                    </div>
-                </div>
+            <div class="footer-col">
+                <h3>Контакты</h3>
+                <p>📍 г. Беслан, ул. Нартовская, 23А</p>
+                <p>📞 <a href="tel:+79187082023">+7 (918) 708-20-23</a></p>
+                <p>🕒 Пн-Пт: 9:00 - 18:00</p>
             </div>
-        </footer>
-
-        <!-- Success Modal -->
-        <div v-if="formSubmitted" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-            <div class="bg-white rounded-xl max-w-md w-full p-8 text-center">
-                <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <i class="fas fa-check text-white text-3xl"></i>
-                </div>
-                <h3 class="text-2xl font-bold text-dark mb-2">Заявка отправлена!</h3>
-                <p class="text-gray-600 mb-6">
-                    Спасибо! Мы свяжемся с вами в ближайшее время для уточнения деталей.
-                </p>
-                <button @click="formSubmitted = false" class="bg-primary hover:bg-secondary text-white font-bold px-8 py-3 rounded-lg transition">
-                    Закрыть
-                </button>
+            <div class="footer-col">
+                <h3>Клиентам</h3>
+                <ul>
+                    <li><a href="blog.html">Блог / Статьи</a></li>
+                    <li><a href="privacy.html">Политика конфиденциальности</a></li>
+                    <li><a href="https://all-world-cars.com/?FranchiseeId=157358060" target="_blank">Интернет-магазин</a></li>
+                </ul>
             </div>
+            <div class="footer-col">
+                <h3>Каталоги</h3>
+                <ul>
+                    <li><a href="https://all-world-cars.com/catalog/?FranchiseeId=157358060" target="_blank">Каталог TecDoc</a></li>
+                    <li><a href="https://all-world-cars.com/laximo/?FranchiseeId=157358060" target="_blank">Оригинальные каталоги Laximo</a></li>
+                    <li><a href="https://all-world-cars.com/chinauto/?FranchiseeId=157358060" target="_blank">Китайские запчасти</a></li>
+                    <li><a href="https://all-world-cars.com/auto2dV2/?action=marks&typeCatalog=TRUCKS_NATIVE/?FranchiseeId=157358060" target="_blank">Запчасти на грузовики</a></li>
+                    <li><a href="https://all-world-cars.com/tires_catalog/?FranchiseeId=157358060" target="_blank">Шины легковые</a></li>
+                    <li><a href="https://all-world-cars.com/truck_tires_catalog/?FranchiseeId=157358060" target="_blank">Шины грузовые</a></li>
+                    <li><a href="https://all-world-cars.com/oils_catalog/?FranchiseeId=157358060" target="_blank">Масла моторные</a></li>
+                    <li><a href="https://all-world-cars.com/ext_cleaners_catalog/?FranchiseeId=157358060" target="_blank">Автохимия</a></li>
+                    <li><a href="https://all-world-cars.com/accessories_catalog/?FranchiseeId=157358060" target="_blank">Автоаксессуары</a></li>
+                    <li><a href="https://all-world-cars.com/battery_boosters_catalog/?FranchiseeId=157358060" target="_blank">Зарядные устройства</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2024–2026 Beslan Cars. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Modal: Callback -->
+    <div id="callbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Заказать звонок</h3>
+            <form class="modal-form" data-type="callback">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="tel" name="phone" placeholder="Телефон" required>
+                <button type="submit" class="btn btn-primary btn-block">Жду звонка</button>
+            </form>
         </div>
     </div>
 
-    <script>
-        const { createApp } = Vue;
-        
-        createApp({
-            data() {
-                return {
-                    mobileMenuOpen: false,
-                    phone: '+79990000000',
-                    telegram: '@beslancars',
-                    showAllArticles: false,
-                    selectedArticle: null,
-                    formSubmitted: false,
-                    form: {
-                        name: '',
-                        phone: '',
-                        car: '',
-                        message: ''
-                    },
-                    blogPosts: [
-                        {
-                            id: 1,
-                            category: 'Советы эксперта',
-                            title: 'Как подобрать автозапчасти по VIN-коду',
-                            excerpt: 'Подробное руководство по подбору запчастей с использованием VIN-кода автомобиля. Избегайте ошибок при заказе.',
-                            date: '15 января 2024',
-                            content: '<p>Подбор запчастей по VIN-коду — самый точный способ найти нужную деталь...</p>'
-                        },
-                        {
-                            id: 2,
-                            category: 'Обслуживание',
-                            title: 'Когда менять масло в двигателе?',
-                            excerpt: 'Рекомендации по интервалам замены моторного масла для разных условий эксплуатации.',
-                            date: '10 января 2024',
-                            content: '<p>Регулярная замена масла — залог долгой службы двигателя...</p>'
-                        },
-                        {
-                            id: 3,
-                            category: 'Новости',
-                            title: 'Новые поступления запчастей для грузовых авто',
-                            excerpt: 'Расширили ассортимент запчастей для грузовых автомобилей европейских и азиатских производителей.',
-                            date: '5 января 2024',
-                            content: '<p>Мы постоянно расширяем наш ассортимент...</p>'
-                        }
-                    ],
-                    reviews: [
-                        {
-                            id: 1,
-                            name: 'Алан Дзугкоев',
-                            city: 'Беслан',
-                            rating: 5,
-                            text: 'Отличный сервис! Заказал запчасти для Toyota Camry, привезли через 3 часа. Цены адекватные, качество оригинальное.'
-                        },
-                        {
-                            id: 2,
-                            name: 'Марина Козаева',
-                            city: 'Владикавказ',
-                            rating: 5,
-                            text: 'Заказывала запчасти для Kia Rio. Доставили бесплатно, так как сумма была больше 5000₽. Очень удобно!'
-                        },
-                        {
-                            id: 3,
-                            name: 'Руслан Темираев',
-                            city: 'Беслан',
-                            rating: 4,
-                            text: 'Хороший магазин, запчасти качественные. Единственное - пришлось подождать 4 дня, но зато цена порадовала.'
-                        }
-                    ]
-                }
-            },
-            computed: {
-                whatsappLink() {
-                    return `https://wa.me/${this.phone.replace(/\+/g, '')}`;
-                },
-                telegramLink() {
-                    return `https://t.me/${this.telegram.replace('@', '')}`;
-                },
-                formattedPhone() {
-                    return this.phone.replace(/(\+7)(\d{3})(\d{3})(\d{2})(\d{2})/, '+7 ($2) $3-$4-$5');
-                }
-            },
-            methods: {
-                openArticle(article) {
-                    this.selectedArticle = article;
-                },
-                submitForm() {
-                    // Здесь должна быть логика отправки формы
-                    // Для GitHub Pages можно использовать Formspree или EmailJS
-                    console.log('Form submitted:', this.form);
-                    
-                    // Имитация успешной отправки
-                    this.formSubmitted = true;
-                    this.form = { name: '', phone: '', car: '', message: '' };
-                    
-                    // Можно добавить отправку в Telegram бот
-                    // this.sendToTelegram();
-                },
-                sendToTelegram() {
-                    // Пример отправки в Telegram (нужен бот токен и chat_id)
-                    // const token = 'YOUR_BOT_TOKEN';
-                    // const chatId = 'YOUR_CHAT_ID';
-                    // const message = `Новая заявка:\nИмя: ${this.form.name}\nТелефон: ${this.form.phone}\nАвто: ${this.form.car}\nСообщение: ${this.form.message}`;
-                    // fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-                    //     method: 'POST',
-                    //     headers: {'Content-Type': 'application/json'},
-                    //     body: JSON.stringify({chat_id: chatId, text: message})
-                    // });
-                }
-            }
-        }).mount('#app');
-    </script>
+    <!-- Modal: Review -->
+    <div id="reviewModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Оставить отзыв</h3>
+            <form class="modal-form" data-type="review">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="text" name="city" placeholder="Город" value="Беслан">
+                <select name="rating">
+                    <option value="5">⭐⭐⭐⭐⭐ (5)</option>
+                    <option value="4">⭐⭐⭐⭐ (4)</option>
+                    <option value="3">⭐⭐⭐ (3)</option>
+                </select>
+                <textarea name="text" placeholder="Ваш отзыв" rows="4" required></textarea>
+                <button type="submit" class="btn btn-primary btn-block">Отправить отзыв</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
