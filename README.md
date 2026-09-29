@@ -1,109 +1,45 @@
-# Beslan Cars — Лендинг автозапчастей
+# Beslan Cars — лендинг автозапчастей (beslancars.ru)
 
-Современный лендинг для компании по продаже и доставке автозапчастей в Беслане и Северной Осетии.
+Статический SEO-лендинг для продажи и доставки автозапчастей по Северной Осетии. Работает на GitHub Pages без сервера.
 
-## 🚀 Особенности
+## Контакты (реальные данные)
+- Телефон/WhatsApp: +7 (918) 708-20-23
+- Telegram: @zapchasti_beslan
+- Email: All-World-Cars-Beslan@yandex.ru
+- ПВЗ: г. Беслан, ул. Нартовская, 23А
+- Домен: https://beslancars.ru
 
-- **Статический сайт** — работает на GitHub Pages без backend
-- **Адаптивный дизайн** — отлично смотрится на всех устройствах
-- **SEO-оптимизация** — мета-теги, Open Graph, семантическая разметка
-- **Формы обратной связи** — заявки, звонки, отзывы
-- **Блог** — встроенная система статей (расширяемая)
-- **Отзывы клиентов** — с модерацией через localStorage
-- **Интеграции** — Яндекс.Метрика, Google Analytics, Telegram (опционально)
-
-## 📁 Структура проекта
-
+## Структура
 ```
-beslancars-landing/
-├── index.html              # Главная страница
-├── privacy.html            # Политика конфиденциальности
-├── spasibo.html            # Страница благодарности
-├── assets/
-│   ├── logo.png            # Логотип (добавьте свой)
-│   └── images/
-│       └── pvz-photo.jpg   # Фото ПВЗ (добавьте своё)
-├── css/
-│   └── style.css           # Основные стили
-└── js/
-    └── main.js             # JavaScript функционал
+index.html          — главная (Schema.org LocalBusiness + FAQPage)
+blog.html           — страница блога
+blog/*.html         — статьи под региональные запросы
+spasibo.html        — страница спасибо
+privacy.html        — политика конфиденциальности
+sitemap.xml         — карта сайта (beslancars.ru)
+robots.txt          — индексация
+CNAME               — привязка домена beslancars.ru
+assets/logo.svg     — логотип
+css/style.css       — стили (фирменные цвета #0056b3 / #ff6600)
+js/main.js          — формы, отзывы, меню
 ```
 
-## 🛠️ Установка и запуск
+## Настройка GitHub Pages
+1. Settings → Pages → Source: Deploy from a branch → `master` / `(root)`.
+2. Включите **Custom domain** через файл CNAME (уже в корне).
+3. У регистратора домена beslancars.ru настройте DNS:
+   - `A`-записи: 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
+   - `CNAME` для www → username.github.io
+4. Enforce HTTPS после выпуска сертификата.
 
-### 1. Загрузите файлы на GitHub
+## Что осталось сделать вручную
+- [ ] Вписать ID Яндекс.Метрики вместо `XXXXXXX` (index.html, spasibo.html, privacy.html)
+- [ ] Вписать ID Google Analytics вместо `G-YOURGAID`
+- [ ] Положить реальные фото ПВЗ в `assets/images/pvz-photo.jpg` и `og-image.jpg`
+- [ ] Подключить отправку форм (Telegram-бот / Formspree) — заготовка в js/main.js
+- [ ] Добавить Yandex Verification / Google Search Console
 
-```bash
-git add .
-git commit -m "Initial commit"
-git push origin main
-```
-
-### 2. Включите GitHub Pages
-
-1. Зайдите в настройки репозитория на GitHub
-2. Перейдите в раздел **Pages**
-3. Выберите ветку `main` и папку `/ (root)`
-4. Сохраните
-
-Через 1-2 минуты сайт будет доступен по адресу:
-`https://ваш-username.github.io/beslancars-landing/`
-
-## ⚙️ Настройка перед запуском
-
-### 1. Обновите контакты
-
-Откройте `index.html` и замените:
-- Номер телефона в `href="tel:+79991234567"` и тексте
-- Ссылки на WhatsApp и Telegram
-- Адрес в футере
-
-### 2. Добавьте счётчики аналитики
-
-В `index.html` замените:
-- `9XXXXXXX` на номер счётчика Яндекс.Метрики
-- `G-XXXXXXXXXX` на ID Google Analytics
-
-### 3. Добавьте логотип и фото
-
-Положите в папку `assets/`:
-- `logo.png` — логотип компании (рекомендуется 200x50px)
-- `images/pvz-photo.jpg` — фото пункта выдачи
-
-### 4. Настройте отправку в Telegram (опционально)
-
-В `js/main.js` раскомментируйте функцию `sendToTelegram()` и укажите:
-- `BOT_TOKEN` — токен вашего бота от @BotFather
-- `CHAT_ID` — ID чата для уведомлений
-
-## 🎨 Цветовая схема
-
-Цвета взяты с сайта партнёра all-world-cars.com:
-
-- **Основной синий**: `#0056b3`
-- **Оранжевый акцент**: `#ff6600`
-- **Тёмный текст**: `#333`
-- **Светлый фон**: `#f8f9fa`
-
-## 📝 Блог
-
-Для добавления статей создайте файлы вида `blog-post-1.html`, `blog-post-2.html` и т.д. по аналогии с главной страницей.
-
-## 📞 Получение заявок
-
-По умолчанию заявки сохраняются в `localStorage` браузера. Для реальной отправки:
-
-1. **Telegram** — раскомментируйте код в `main.js`
-2. **Email** — используйте сервисы типа Formspree или EmailJS
-3. **Google Таблицы** — через Google Apps Script
-
-## 📄 Лицензия
-
-© 2024 Beslan Cars. Все права защищены.
-
----
-
-**Контакты для связи:**
-- Телефон: +7 (999) 123-45-67
-- WhatsApp: https://wa.me/79991234567
-- Telegram: @yourtelegram
+## Публикация новой статьи
+1. Скопируйте любой файл из `blog/` как шаблон.
+2. Замените title, description, canonical, текст и JSON-LD Article.
+3. Добавьте ссылку в `blog.html`, блок «Полезные статьи» в `index.html` и в `sitemap.xml`.

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="64" viewBox="0 0 240 64">
+  <rect x="2" y="8" width="48" height="48" rx="10" fill="#0056b3"/>
+  <path d="M14 40c0-8 5-16 12-16s12 8 12 16" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="20" cy="42" r="4" fill="#ff6600"/>
+  <circle cx="32" cy="42" r="4" fill="#ff6600"/>
+  <text x="60" y="34" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#0056b3">Beslan</text>
+  <text x="60" y="56" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#ff6600">Cars</text>
+</svg>
